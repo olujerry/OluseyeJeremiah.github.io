@@ -1,0 +1,333 @@
+[
+  {
+    "title": "Mistral 3: Inside the Model Family, Benchmarks & Real-World Testing",
+    "url": "https://www.datacamp.com/blog/mistral-3",
+    "platform": "DataCamp",
+    "tags": ["LLMs", "AI", "Benchmarks"],
+    "excerpt": "In-depth coverage of the full Mistral 3 family — Large 3, Ministral 14B, 8B, and 3B. Covers architecture, benchmark comparisons, multimodal testing, and enterprise use cases.",
+    "featured": true
+  },
+  {
+    "title": "Mistral Le Chat: Europe's Answer to ChatGPT",
+    "url": "https://www.datacamp.com/blog/mistral-le-chat",
+    "platform": "DataCamp",
+    "tags": ["Mistral", "AI Assistant"],
+    "excerpt": "Coverage of Mistral's AI assistant — fast responses, multilingual support, and GDPR compliance for European teams."
+  },
+  {
+    "title": "Mistral Vibe 2.0: The Terminal-Based AI Coding Agent",
+    "url": "https://www.datacamp.com/blog/mistral-vibe-2-0",
+    "platform": "DataCamp",
+    "tags": ["AI Agents", "Coding"],
+    "excerpt": "Guide to Mistral's terminal-based agentic coding tool — capabilities, use cases, and developer workflows."
+  },
+  {
+    "title": "RAG Frameworks You Should Know: Open-Source Tools for Smarter AI",
+    "url": "https://www.datacamp.com/blog/rag-framework",
+    "platform": "DataCamp",
+    "tags": ["RAG", "LLMs", "Open Source"],
+    "excerpt": "Comparison of open-source RAG frameworks for building AI applications with external data sources."
+  },
+  {
+    "title": "What is Reverse ETL? A Helpful Guide",
+    "url": "https://www.datacamp.com/blog/reverse-etl",
+    "platform": "DataCamp",
+    "tags": ["Data Engineering", "ETL"],
+    "excerpt": "Explains how reverse ETL moves warehouse data into operational tools like CRMs and marketing platforms."
+  },
+  {
+    "title": "What Is Business Intelligence? All the Basics Covered",
+    "url": "https://www.datacamp.com/blog/what-is-business-intelligence",
+    "platform": "DataCamp",
+    "tags": ["BI", "Data Analysis"],
+    "excerpt": "Comprehensive introduction to BI — covering collection, analysis, visualization, and modern BI platforms."
+  },
+  {
+    "title": "Git Subtree Explained: A Practical Guide with Examples",
+    "url": "https://www.datacamp.com/tutorial/git-subtree",
+    "platform": "DataCamp",
+    "tags": ["Git", "DevTools"],
+    "excerpt": "Step-by-step tutorial on using Git Subtree for modular repository management and dependency workflows."
+  },
+  {
+    "title": "Git Pull: Keeping Your Local Repository Up to Date",
+    "url": "https://www.datacamp.com/tutorial/git-pull",
+    "platform": "DataCamp",
+    "tags": ["Git", "Version Control"],
+    "excerpt": "Tutorial on git pull workflows, remote tracking, and keeping local repos synchronized with the team."
+  },
+  {
+    "title": "Understanding SQL Transactions: A Comprehensive Guide",
+    "url": "https://www.datacamp.com/tutorial/sql-transactions",
+    "platform": "DataCamp",
+    "tags": ["SQL", "Databases"],
+    "excerpt": "Detailed guide to SQL transactions — ACID properties, commit/rollback patterns, and concurrency control."
+  },
+  {
+    "title": "How to Use Homebrew to Install PostgreSQL on Mac",
+    "url": "https://www.datacamp.com/tutorial/brew-install-postgres",
+    "platform": "DataCamp",
+    "tags": ["PostgreSQL", "DevOps"],
+    "excerpt": "Practical setup guide for PostgreSQL on macOS using Homebrew — installation, path setup, and essential commands."
+  },
+  {
+    "title": "What Is a Parquet File? Key Things to Know",
+    "url": "https://www.datacamp.com/tutorial/what-is-a-parquet-file",
+    "platform": "DataCamp",
+    "tags": ["Data Engineering", "Big Data"],
+    "excerpt": "Explains Parquet's columnar storage format, performance benefits, and when to use it in modern data pipelines."
+  },
+  {
+    "title": "Nemotron 3: Architecture, Benchmarks, and Model Comparisons",
+    "url": "https://www.datacamp.com/blog/nvidia-nemotron-3",
+    "platform": "DataCamp",
+    "tags": ["LLMs", "NVIDIA", "AI"],
+    "excerpt": "Technical coverage of NVIDIA's Nemotron 3 — MoE architecture, throughput vs reasoning tradeoffs, and comparisons."
+  },
+  {
+    "title": "Python Backend Development: A Complete Guide for Beginners",
+    "url": "https://www.datacamp.com/tutorial/python-backend-development",
+    "platform": "DataCamp",
+    "tags": ["Python", "Backend", "Django"],
+    "excerpt": "End-to-end guide covering Django, Flask, APIs, authentication, and deployment for Python backend development."
+  },
+  {
+    "title": "How to Measure RAG System Performance",
+    "url": "https://dev.to/actiandev/how-to-measure-rag-system-performance-1i1h",
+    "platform": "Hackmamba",
+    "tags": ["RAG", "AI Evaluation", "LLMs"],
+    "excerpt": "Deep-dive into evaluating RAG systems — covering metrics like faithfulness, relevance, and context precision.",
+    "featured": true
+  },
+  {
+    "title": "How to Perform Machine Learning Tasks with Python and SQL",
+    "url": "https://www.freecodecamp.org/news/machine-learning-with-python-and-sql/",
+    "platform": "freeCodeCamp",
+    "tags": ["ML", "Python", "SQL"],
+    "excerpt": "Connecting Python ML pipelines to SQL databases using PyMySQL and Scikit-learn for real-world data tasks."
+  },
+  {
+    "title": "How to Automate Excel Tasks with Python",
+    "url": "https://www.freecodecamp.org/news/automate-excel-tasks-with-python/",
+    "platform": "freeCodeCamp",
+    "tags": ["Excel", "Pandas", "Automation"],
+    "excerpt": "Automating Excel workflows with Pandas, openpyxl, and pyautogui — data extraction, reporting, and visualisation."
+  },
+  {
+    "title": "Advanced SQL Techniques for Complex Queries",
+    "url": "https://www.freecodecamp.org/news/advanced-sql-techniques/",
+    "platform": "freeCodeCamp",
+    "tags": ["SQL", "Analytics"],
+    "excerpt": "Window functions, CTEs, and advanced SQL patterns for data analysts working with complex datasets."
+  },
+  {
+    "title": "How to Get Started in Data Analytics — A Roadmap for Beginners",
+    "url": "https://www.freecodecamp.org/news/data-analytics-roadmap/",
+    "platform": "freeCodeCamp",
+    "tags": ["Data Analytics", "Career"],
+    "excerpt": "Career guide and structured learning roadmap for aspiring data analysts entering the field."
+  },
+  {
+    "title": "How to Generate Automated Reports from a SQL Database Using Python",
+    "url": "https://www.freecodecamp.org/news/automating-report-generation-from-sql-databases-using-python/",
+    "platform": "freeCodeCamp",
+    "tags": ["SQL", "Python", "Reports"],
+    "excerpt": "Python-powered automated report generation from SQL databases — reducing manual extraction and formatting time."
+  },
+  {
+    "title": "SQL Tips to Help You Save Time and Write Simpler Queries",
+    "url": "https://www.freecodecamp.org/news/sql-tips-save-time-write-simpler-queries/",
+    "platform": "freeCodeCamp",
+    "tags": ["SQL", "Productivity"],
+    "excerpt": "Practical SQL optimisation tips using aliases, joins, and subqueries for working data analysts."
+  },
+  {
+    "title": "How to Automate SQL Database Backups Using Python",
+    "url": "https://www.freecodecamp.org/news/automate-sql-database-backups-using-python/",
+    "platform": "freeCodeCamp",
+    "tags": ["SQL", "Python", "Automation"],
+    "excerpt": "Automating SQL database backup workflows with pyodbc and Pandas — faster, less error-prone backups."
+  },
+  {
+    "title": "How to Read and Write Data to a SQL Database Using Python",
+    "url": "https://www.freecodecamp.org/news/how-to-read-and-write-data-to-a-sql-database-using-python/",
+    "platform": "freeCodeCamp",
+    "tags": ["Python", "SQL", "Databases"],
+    "excerpt": "CRUD operations on SQL databases using pymysql and psycopg2 — practical tutorial for data pipelines."
+  },
+  {
+    "title": "How to Remove Duplicate Data in SQL",
+    "url": "https://www.freecodecamp.org/news/how-to-remove-duplicate-data-in-sql/",
+    "platform": "freeCodeCamp",
+    "tags": ["SQL", "Data Quality"],
+    "excerpt": "DISTINCT, GROUP BY, and INNER JOIN techniques for deduplicating SQL data — cleaner, faster databases."
+  },
+  {
+    "title": "How to Effectively Search Large Datasets in Python",
+    "url": "https://www.freecodecamp.org/news/how-to-search-large-datasets-in-python/",
+    "platform": "freeCodeCamp",
+    "tags": ["Python", "Data"],
+    "excerpt": "Binary search, sets, and dictionaries for efficient lookup in large Python datasets."
+  },
+  {
+    "title": "Multi-Dimensional Arrays in Python — Matrices Explained with NumPy",
+    "url": "https://www.freecodecamp.org/news/multi-dimensional-arrays-in-python/",
+    "platform": "freeCodeCamp",
+    "tags": ["NumPy", "Python"],
+    "excerpt": "NumPy matrix operations with practical examples — bridging math concepts and Python implementation."
+  },
+  {
+    "title": "Slicing and Indexing in Python — Explained with Examples",
+    "url": "https://www.freecodecamp.org/news/slicing-and-indexing-in-python/",
+    "platform": "freeCodeCamp",
+    "tags": ["Python", "Data"],
+    "excerpt": "Core Python data access concepts — list filtering, column extraction, and substring operations explained."
+  },
+  {
+    "title": "How to Use Conditional Statements in Python (if, else, elif)",
+    "url": "https://www.freecodecamp.org/news/how-to-use-conditional-statements-if-else-elif-in-python/",
+    "platform": "freeCodeCamp",
+    "tags": ["Python", "Beginners"],
+    "excerpt": "Practical guide to if, else, and elif statements in Python with real-world examples."
+  },
+  {
+    "title": "How to Use Loops in Python",
+    "url": "https://www.freecodecamp.org/news/how-to-use-loops-in-python/",
+    "platform": "freeCodeCamp",
+    "tags": ["Python", "Beginners"],
+    "excerpt": "For and while loops explained clearly — essential Python concepts with practical code examples."
+  },
+  {
+    "title": "How to Define and Call Functions in Python",
+    "url": "https://www.freecodecamp.org/news/how-to-define-and-call-functions-in-python/",
+    "platform": "freeCodeCamp",
+    "tags": ["Python", "Beginners"],
+    "excerpt": "Defining and calling functions in Python — improving code readability and reusability explained with examples."
+  },
+  {
+    "title": "How to Create and Manipulate Tables in a SQL Database Using Python",
+    "url": "https://www.freecodecamp.org/news/create-and-manipulate-tables-in-a-sql-database-using-python/",
+    "platform": "freeCodeCamp",
+    "tags": ["SQLite", "Python"],
+    "excerpt": "SQLite and Python for structured data table management — beginner-to-intermediate with clear examples."
+  },
+  {
+    "title": "How to Test and Debug SQL Queries with Python",
+    "url": "https://www.freecodecamp.org/news/testing-and-debugging-sql-queries-with-python/",
+    "platform": "freeCodeCamp",
+    "tags": ["SQL", "Testing", "Python"],
+    "excerpt": "Techniques for testing and debugging SQL queries programmatically in Python — reliable data pipelines."
+  },
+  {
+    "title": "Deploying a Machine Learning Model as an API",
+    "url": "https://medium.com/cometheartbeat/deploying-a-machine-learning-model-as-an-api-d3cbef264ce4",
+    "platform": "Medium",
+    "tags": ["ML", "API", "Deployment"],
+    "excerpt": "Why it matters to deploy ML models to production, and how an API makes that practical — with step-by-step guidance."
+  },
+  {
+    "title": "Detecting Credit Card Fraud with Machine Learning",
+    "url": "https://heartbeat.comet.ml/detecting-credit-card-fraud-with-machine-learning-644db0795edf",
+    "platform": "Medium",
+    "tags": ["ML", "Fraud Detection", "Classification"],
+    "excerpt": "Building a credit card fraud detection model — covering the dataset, feature engineering, and model evaluation."
+  },
+  {
+    "title": "Logging Recommendation System Visualizations in Comet",
+    "url": "https://medium.com/cometheartbeat/logging-recommendation-system-visualizations-in-comet-2aeb14669c2e",
+    "platform": "Medium",
+    "tags": ["ML", "Comet", "Recommender Systems"],
+    "excerpt": "Building a movie recommendation system and logging visualizations in Comet for experiment tracking."
+  },
+  {
+    "title": "Exploring Image Classification with Kangas",
+    "url": "https://medium.com/cometheartbeat/exploring-image-classification-with-kangas-c710c7a5a4d9",
+    "platform": "Medium",
+    "tags": ["ML", "Computer Vision", "Kangas"],
+    "excerpt": "Using Kangas to explore image classification — uploading images, labeling data, and visualising model performance."
+  },
+  {
+    "title": "Tracking Your Sentiment Analysis with Comet",
+    "url": "https://medium.com/cometheartbeat/tracking-your-sentiment-analysis-with-comet-3f94bd92a84f",
+    "platform": "Medium",
+    "tags": ["NLP", "Sentiment Analysis", "Comet"],
+    "excerpt": "Opinion mining with NLP — building and tracking a sentiment analysis model using Comet experiment tracking."
+  },
+  {
+    "title": "Monitoring a Convolutional Neural Network (CNN) in Comet",
+    "url": "https://medium.com/cometheartbeat/monitoring-a-convolutional-neural-network-cnn-in-comet-702c2d51c839",
+    "platform": "Medium",
+    "tags": ["Deep Learning", "CNN", "Comet"],
+    "excerpt": "Training an image classification CNN and monitoring its training metrics and performance using Comet."
+  },
+  {
+    "title": "Integrating Time Series Analysis in Comet",
+    "url": "https://medium.com/cometheartbeat/integrating-time-series-analysis-in-comet-293d1d0e2b22",
+    "platform": "Medium",
+    "tags": ["Time Series", "ML", "Comet"],
+    "excerpt": "How to integrate time series forecasting workflows into Comet for experiment tracking and result logging."
+  },
+  {
+    "title": "MalarAI: Mobile Deep Learning for Malaria Detection in Low-Resource Settings",
+    "url": "https://medium.com/@oluseyejeremiah",
+    "platform": "Medium",
+    "tags": ["Deep Learning", "Healthcare", "TFLite"],
+    "excerpt": "MSc research write-up on EfficientNet-B0, Grad-CAM, and TensorFlow Lite for offline Android malaria detection."
+  },
+  {
+    "title": "Understanding Various Cloud Services",
+    "url": "https://medium.com/@oluseyejeremiah/understanding-various-cloud-services-1f113496e9a5",
+    "platform": "Medium",
+    "tags": ["Cloud", "AWS", "Azure"],
+    "excerpt": "How cloud computing works, the various cloud service models, and types of cloud deployment explained clearly."
+  },
+  {
+    "title": "Understanding Azure SQL Elastic Pools",
+    "url": "https://medium.com/@oluseyejeremiah/understanding-azure-sql-elastic-pools-62f4980e8743",
+    "platform": "Medium",
+    "tags": ["Azure", "SQL", "Cloud"],
+    "excerpt": "Azure SQL Database and Elastic Pools explained — scalable, secure, cost-effective cloud database management."
+  },
+  {
+    "title": "How to Implement a Robust Voice Authentication System with Go and Twilio",
+    "url": "https://www.twilio.com/en-us/blog/implement-robust-voice-authentication-go",
+    "platform": "Twilio",
+    "tags": ["Voice API", "Go", "Auth"],
+    "excerpt": "Building a voice-based OTP system using Twilio Programmable Voice and Go — secure, accessible authentication."
+  },
+  {
+    "title": "Creating a Health Chatbot Using Twilio and Gemini",
+    "url": "https://www.twilio.com/en-us/blog/developers/community/create-health-chatbot-using-twilio-gemini-step-by-step-guide",
+    "platform": "Twilio",
+    "tags": ["WhatsApp API", "Gemini", "AI Chatbot"],
+    "excerpt": "Building an intelligent healthcare chatbot with Twilio's WhatsApp API and Google Gemini AI responses."
+  },
+  {
+    "title": "How to Build a To-Do App Using Next.js and Strapi",
+    "url": "https://strapi.io/blog/how-to-build-a-to-do-app-using-next-js-and-strapi",
+    "platform": "Strapi",
+    "tags": ["Next.js", "Strapi", "GraphQL"],
+    "excerpt": "Full-stack To-Do app with Strapi's headless CMS and Next.js — covering GraphQL, content types, and CRUD."
+  },
+  {
+    "title": "How to Build a Hotel Management App Using Strapi and Next.js",
+    "url": "https://strapi.io/blog/how-to-build-a-hotel-management-app-using-strapi-and-nextjs",
+    "platform": "Strapi",
+    "tags": ["Next.js", "Strapi", "Full-stack"],
+    "excerpt": "End-to-end hotel booking system with auth, image upload, availability, and room selection using Strapi + Next.js."
+  },
+  {
+    "title": "Dealing with Missing Values in a Dataset",
+    "url": "https://oluseyejeremiah.hashnode.dev/dealing-with-missing-values-in-a-dataset",
+    "platform": "Hashnode",
+    "tags": ["Python", "Data Cleaning", "ML"],
+    "excerpt": "Common causes of missing data and techniques to handle them — imputation, deletion, and best practices."
+  },
+  {
+    "title": "Explaining the Differences Between SaaS, PaaS and IaaS",
+    "url": "https://oluseyejeremiah.hashnode.dev/explaining-the-differences-between-saaspaas-and-iaas",
+    "platform": "Hashnode",
+    "tags": ["Cloud", "SaaS", "IaaS"],
+    "excerpt": "Clear breakdown of the three cloud service models — features, advantages, disadvantages, and when to use each."
+  }
+]
