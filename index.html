@@ -6,7 +6,7 @@
 <title>Oluseye Jeremiah Oluwapelumi — Writing Portfolio</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
@@ -18,6 +18,8 @@
 }
 body{font-family:var(--sans);background:var(--bg);color:var(--ink);font-size:15px;line-height:1.6;}
 a{color:inherit;text-decoration:none;}
+
+/* hero */
 .hero{background:var(--white);border-bottom:1px solid var(--border);padding:4rem 2rem 3rem;}
 .hero-inner{max-width:1060px;margin:0 auto;}
 .tag-row{display:flex;align-items:center;gap:10px;margin-bottom:1.5rem;flex-wrap:wrap;}
@@ -35,6 +37,8 @@ a{color:inherit;text-decoration:none;}
 .st-l{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
 .updated{font-size:11px;color:var(--muted);margin-top:1rem;}
 .updated span{color:var(--green);font-weight:600;}
+
+/* filter */
 .fbar{position:sticky;top:0;z-index:20;background:rgba(250,250,249,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
 .fi{max-width:1060px;margin:0 auto;padding:0 2rem;display:flex;overflow-x:auto;scrollbar-width:none;align-items:stretch;}
 .fi::-webkit-scrollbar{display:none;}
@@ -42,6 +46,8 @@ a{color:inherit;text-decoration:none;}
 .fb:hover{color:var(--ink);}
 .fb.on{color:var(--accent);border-bottom-color:var(--accent);font-weight:600;}
 .fcount{margin-left:auto;display:flex;align-items:center;font-size:12px;color:var(--muted);padding-left:1rem;white-space:nowrap;}
+
+/* grid */
 .main{max-width:1060px;margin:0 auto;padding:2.5rem 2rem 5rem;}
 .sh{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:1.5rem;display:flex;align-items:center;gap:12px;}
 .sh::after{content:'';flex:1;height:1px;background:var(--border);}
@@ -64,10 +70,14 @@ a{color:inherit;text-decoration:none;}
 .read-btn{font-size:12px;font-weight:600;color:var(--accent);display:inline-flex;align-items:center;gap:4px;white-space:nowrap;transition:gap .15s;}
 .read-btn:hover{gap:7px;}
 .read-btn::after{content:'→';}
+
+/* see all */
 .see-all-row{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;}
 .see-all{font-size:13px;font-weight:600;color:var(--accent);border:1px solid var(--accent-bd);border-radius:6px;padding:9px 20px;background:var(--accent-bg);display:inline-flex;align-items:center;gap:6px;transition:background .15s;}
 .see-all:hover{background:#ddeafb;}
 .see-all::after{content:'↗';font-size:12px;}
+
+/* about */
 .about{margin-top:3rem;padding-top:2.5rem;border-top:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr;gap:3rem;}
 @media(max-width:680px){.about{grid-template-columns:1fr;gap:2rem;}}
 .al{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:1rem;}
@@ -81,6 +91,8 @@ a{color:inherit;text-decoration:none;}
 .plat-name{font-size:13px;font-weight:600;color:var(--ink);}
 .plat-desc{font-size:11.5px;color:var(--muted);margin-left:auto;}
 .plat-arr{font-size:12px;color:var(--border2);}
+
+/* footer */
 footer{border-top:1px solid var(--border);max-width:1060px;margin:0 auto;padding:1.5rem 2rem;display:flex;justify-content:space-between;align-items:center;font-size:11.5px;color:var(--muted);flex-wrap:wrap;gap:.75rem;}
 .fd{display:flex;align-items:center;gap:7px;}
 .fdot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2s infinite;}
@@ -88,6 +100,7 @@ footer{border-top:1px solid var(--border);max-width:1060px;margin:0 auto;padding
 </style>
 </head>
 <body>
+
 <header class="hero">
   <div class="hero-inner">
     <div class="tag-row">
@@ -121,6 +134,7 @@ footer{border-top:1px solid var(--border);max-width:1060px;margin:0 auto;padding
     <p class="updated">Last updated: <span>April 10, 2026</span></p>
   </div>
 </header>
+
 <div class="fbar">
   <div class="fi">
     <button class="fb on" onclick="filter('all',this)">All</button>
@@ -131,302 +145,590 @@ footer{border-top:1px solid var(--border);max-width:1060px;margin:0 auto;padding
     <button class="fb" onclick="filter('str',this)">Strapi</button>
     <button class="fb" onclick="filter('twi',this)">Twilio</button>
     <button class="fb" onclick="filter('fcc',this)">freeCodeCamp</button>
+
     <span class="fcount"><span id="cnt">47</span> articles</span>
   </div>
 </div>
+
 <div class="main">
   <p class="sh">Selected work</p>
   <div class="grid" id="grid">
+    
     <a class="card card-feat" data-p="dc" href="https://www.datacamp.com/blog/mistral-3" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span><span class="card-num">Featured</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span>
+        <span class="card-num">Featured</span>
+      </div>
       <h2 class="card-title">Mistral 3: Inside the Model Family, Benchmarks &amp; Real-World Testing</h2>
       <p class="card-excerpt">In-depth coverage of the full Mistral 3 family — Large 3, Ministral 14B, 8B, and 3B. Covers architecture, benchmark comparisons, multimodal testing, and enterprise use cases.</p>
-      <div class="card-foot"><div class="tags"><span class="t">LLMs</span><span class="t">AI</span><span class="t">Benchmarks</span></div><span class="read-btn">Read&nbsp;article</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">LLMs</span><span class="t">AI</span><span class="t">Benchmarks</span></div>
+        <span class="read-btn">Read&nbsp;article</span>
+      </div>
     </a>
     <a class="card" data-p="dc" href="https://www.datacamp.com/blog/mistral-le-chat" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span><span class="card-num">1</span></div>
-      <h2 class="card-title">Mistral Le Chat: Europe's Answer to ChatGPT</h2>
-      <p class="card-excerpt">Coverage of Mistral's AI assistant — fast responses, multilingual support, and GDPR compliance for European teams.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Mistral</span><span class="t">AI Assistant</span></div><span class="read-btn">Read</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span>
+        <span class="card-num">1</span>
+      </div>
+      <h2 class="card-title">Mistral Le Chat: Europe&#x27;s Answer to ChatGPT</h2>
+      <p class="card-excerpt">Coverage of Mistral&#x27;s AI assistant — fast responses, multilingual support, and GDPR compliance for European teams.</p>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Mistral</span><span class="t">AI Assistant</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="dc" href="https://www.datacamp.com/blog/mistral-vibe-2-0" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span><span class="card-num">2</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span>
+        <span class="card-num">2</span>
+      </div>
       <h2 class="card-title">Mistral Vibe 2.0: The Terminal-Based AI Coding Agent</h2>
-      <p class="card-excerpt">Guide to Mistral's terminal-based agentic coding tool — capabilities, use cases, and developer workflows.</p>
-      <div class="card-foot"><div class="tags"><span class="t">AI Agents</span><span class="t">Coding</span></div><span class="read-btn">Read</span></div>
+      <p class="card-excerpt">Guide to Mistral&#x27;s terminal-based agentic coding tool — capabilities, use cases, and developer workflows.</p>
+      <div class="card-foot">
+        <div class="tags"><span class="t">AI Agents</span><span class="t">Coding</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="dc" href="https://www.datacamp.com/blog/rag-framework" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span><span class="card-num">3</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span>
+        <span class="card-num">3</span>
+      </div>
       <h2 class="card-title">RAG Frameworks You Should Know: Open-Source Tools for Smarter AI</h2>
       <p class="card-excerpt">Comparison of open-source RAG frameworks for building AI applications with external data sources.</p>
-      <div class="card-foot"><div class="tags"><span class="t">RAG</span><span class="t">LLMs</span><span class="t">Open Source</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">RAG</span><span class="t">LLMs</span><span class="t">Open Source</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="dc" href="https://www.datacamp.com/blog/reverse-etl" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span><span class="card-num">4</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span>
+        <span class="card-num">4</span>
+      </div>
       <h2 class="card-title">What is Reverse ETL? A Helpful Guide</h2>
       <p class="card-excerpt">Explains how reverse ETL moves warehouse data into operational tools like CRMs and marketing platforms.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Data Engineering</span><span class="t">ETL</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Data Engineering</span><span class="t">ETL</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="dc" href="https://www.datacamp.com/blog/what-is-business-intelligence" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span><span class="card-num">5</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span>
+        <span class="card-num">5</span>
+      </div>
       <h2 class="card-title">What Is Business Intelligence? All the Basics Covered</h2>
       <p class="card-excerpt">Comprehensive introduction to BI — covering collection, analysis, visualization, and modern BI platforms.</p>
-      <div class="card-foot"><div class="tags"><span class="t">BI</span><span class="t">Data Analysis</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">BI</span><span class="t">Data Analysis</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="dc" href="https://www.datacamp.com/tutorial/git-subtree" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span><span class="card-num">6</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span>
+        <span class="card-num">6</span>
+      </div>
       <h2 class="card-title">Git Subtree Explained: A Practical Guide with Examples</h2>
       <p class="card-excerpt">Step-by-step tutorial on using Git Subtree for modular repository management and dependency workflows.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Git</span><span class="t">DevTools</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Git</span><span class="t">DevTools</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="dc" href="https://www.datacamp.com/tutorial/git-pull" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span><span class="card-num">7</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span>
+        <span class="card-num">7</span>
+      </div>
       <h2 class="card-title">Git Pull: Keeping Your Local Repository Up to Date</h2>
       <p class="card-excerpt">Tutorial on git pull workflows, remote tracking, and keeping local repos synchronized with the team.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Git</span><span class="t">Version Control</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Git</span><span class="t">Version Control</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="dc" href="https://www.datacamp.com/tutorial/sql-transactions" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span><span class="card-num">8</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span>
+        <span class="card-num">8</span>
+      </div>
       <h2 class="card-title">Understanding SQL Transactions: A Comprehensive Guide</h2>
       <p class="card-excerpt">Detailed guide to SQL transactions — ACID properties, commit/rollback patterns, and concurrency control.</p>
-      <div class="card-foot"><div class="tags"><span class="t">SQL</span><span class="t">Databases</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">SQL</span><span class="t">Databases</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="dc" href="https://www.datacamp.com/tutorial/brew-install-postgres" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span><span class="card-num">9</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span>
+        <span class="card-num">9</span>
+      </div>
       <h2 class="card-title">How to Use Homebrew to Install PostgreSQL on Mac</h2>
       <p class="card-excerpt">Practical setup guide for PostgreSQL on macOS using Homebrew — installation, path setup, and essential commands.</p>
-      <div class="card-foot"><div class="tags"><span class="t">PostgreSQL</span><span class="t">DevOps</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">PostgreSQL</span><span class="t">DevOps</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="dc" href="https://www.datacamp.com/tutorial/what-is-a-parquet-file" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span><span class="card-num">10</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span>
+        <span class="card-num">10</span>
+      </div>
       <h2 class="card-title">What Is a Parquet File? Key Things to Know</h2>
-      <p class="card-excerpt">Explains Parquet's columnar storage format, performance benefits, and when to use it in modern data pipelines.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Data Engineering</span><span class="t">Big Data</span></div><span class="read-btn">Read</span></div>
+      <p class="card-excerpt">Explains Parquet&#x27;s columnar storage format, performance benefits, and when to use it in modern data pipelines.</p>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Data Engineering</span><span class="t">Big Data</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="dc" href="https://www.datacamp.com/blog/nvidia-nemotron-3" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span><span class="card-num">11</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span>
+        <span class="card-num">11</span>
+      </div>
       <h2 class="card-title">Nemotron 3: Architecture, Benchmarks, and Model Comparisons</h2>
-      <p class="card-excerpt">Technical coverage of NVIDIA's Nemotron 3 — MoE architecture, throughput vs reasoning tradeoffs, and comparisons.</p>
-      <div class="card-foot"><div class="tags"><span class="t">LLMs</span><span class="t">NVIDIA</span><span class="t">AI</span></div><span class="read-btn">Read</span></div>
+      <p class="card-excerpt">Technical coverage of NVIDIA&#x27;s Nemotron 3 — MoE architecture, throughput vs reasoning tradeoffs, and comparisons.</p>
+      <div class="card-foot">
+        <div class="tags"><span class="t">LLMs</span><span class="t">NVIDIA</span><span class="t">AI</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="dc" href="https://www.datacamp.com/tutorial/python-backend-development" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span><span class="card-num">12</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#eef4fd;color:#0f5bb5;">DataCamp</span>
+        <span class="card-num">12</span>
+      </div>
       <h2 class="card-title">Python Backend Development: A Complete Guide for Beginners</h2>
       <p class="card-excerpt">End-to-end guide covering Django, Flask, APIs, authentication, and deployment for Python backend development.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Python</span><span class="t">Backend</span><span class="t">Django</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Python</span><span class="t">Backend</span><span class="t">Django</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card card-feat" data-p="hm" href="https://dev.to/actiandev/how-to-measure-rag-system-performance-1i1h" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#fff7ed;color:#c2410c;">Hackmamba</span><span class="card-num">Featured</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#fff7ed;color:#c2410c;">Hackmamba</span>
+        <span class="card-num">Featured</span>
+      </div>
       <h2 class="card-title">How to Measure RAG System Performance</h2>
       <p class="card-excerpt">Deep-dive into evaluating RAG systems — covering metrics like faithfulness, relevance, and context precision.</p>
-      <div class="card-foot"><div class="tags"><span class="t">RAG</span><span class="t">AI Evaluation</span><span class="t">LLMs</span></div><span class="read-btn">Read&nbsp;article</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">RAG</span><span class="t">AI Evaluation</span><span class="t">LLMs</span></div>
+        <span class="read-btn">Read&nbsp;article</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/machine-learning-with-python-and-sql/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">13</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">13</span>
+      </div>
       <h2 class="card-title">How to Perform Machine Learning Tasks with Python and SQL</h2>
       <p class="card-excerpt">Connecting Python ML pipelines to SQL databases using PyMySQL and Scikit-learn for real-world data tasks.</p>
-      <div class="card-foot"><div class="tags"><span class="t">ML</span><span class="t">Python</span><span class="t">SQL</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">ML</span><span class="t">Python</span><span class="t">SQL</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/automate-excel-tasks-with-python/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">14</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">14</span>
+      </div>
       <h2 class="card-title">How to Automate Excel Tasks with Python</h2>
       <p class="card-excerpt">Automating Excel workflows with Pandas, openpyxl, and pyautogui — data extraction, reporting, and visualisation.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Excel</span><span class="t">Pandas</span><span class="t">Automation</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Excel</span><span class="t">Pandas</span><span class="t">Automation</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/advanced-sql-techniques/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">15</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">15</span>
+      </div>
       <h2 class="card-title">Advanced SQL Techniques for Complex Queries</h2>
       <p class="card-excerpt">Window functions, CTEs, and advanced SQL patterns for data analysts working with complex datasets.</p>
-      <div class="card-foot"><div class="tags"><span class="t">SQL</span><span class="t">Analytics</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">SQL</span><span class="t">Analytics</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/data-analytics-roadmap/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">16</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">16</span>
+      </div>
       <h2 class="card-title">How to Get Started in Data Analytics — A Roadmap for Beginners</h2>
       <p class="card-excerpt">Career guide and structured learning roadmap for aspiring data analysts entering the field.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Data Analytics</span><span class="t">Career</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Data Analytics</span><span class="t">Career</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/automating-report-generation-from-sql-databases-using-python/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">17</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">17</span>
+      </div>
       <h2 class="card-title">How to Generate Automated Reports from a SQL Database Using Python</h2>
       <p class="card-excerpt">Python-powered automated report generation from SQL databases — reducing manual extraction and formatting time.</p>
-      <div class="card-foot"><div class="tags"><span class="t">SQL</span><span class="t">Python</span><span class="t">Reports</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">SQL</span><span class="t">Python</span><span class="t">Reports</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/sql-tips-save-time-write-simpler-queries/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">18</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">18</span>
+      </div>
       <h2 class="card-title">SQL Tips to Help You Save Time and Write Simpler Queries</h2>
       <p class="card-excerpt">Practical SQL optimisation tips using aliases, joins, and subqueries for working data analysts.</p>
-      <div class="card-foot"><div class="tags"><span class="t">SQL</span><span class="t">Productivity</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">SQL</span><span class="t">Productivity</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/automate-sql-database-backups-using-python/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">19</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">19</span>
+      </div>
       <h2 class="card-title">How to Automate SQL Database Backups Using Python</h2>
       <p class="card-excerpt">Automating SQL database backup workflows with pyodbc and Pandas — faster, less error-prone backups.</p>
-      <div class="card-foot"><div class="tags"><span class="t">SQL</span><span class="t">Python</span><span class="t">Automation</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">SQL</span><span class="t">Python</span><span class="t">Automation</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/how-to-read-and-write-data-to-a-sql-database-using-python/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">20</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">20</span>
+      </div>
       <h2 class="card-title">How to Read and Write Data to a SQL Database Using Python</h2>
       <p class="card-excerpt">CRUD operations on SQL databases using pymysql and psycopg2 — practical tutorial for data pipelines.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Python</span><span class="t">SQL</span><span class="t">Databases</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Python</span><span class="t">SQL</span><span class="t">Databases</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/how-to-remove-duplicate-data-in-sql/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">21</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">21</span>
+      </div>
       <h2 class="card-title">How to Remove Duplicate Data in SQL</h2>
       <p class="card-excerpt">DISTINCT, GROUP BY, and INNER JOIN techniques for deduplicating SQL data — cleaner, faster databases.</p>
-      <div class="card-foot"><div class="tags"><span class="t">SQL</span><span class="t">Data Quality</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">SQL</span><span class="t">Data Quality</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/how-to-search-large-datasets-in-python/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">22</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">22</span>
+      </div>
       <h2 class="card-title">How to Effectively Search Large Datasets in Python</h2>
       <p class="card-excerpt">Binary search, sets, and dictionaries for efficient lookup in large Python datasets.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Python</span><span class="t">Data</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Python</span><span class="t">Data</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/multi-dimensional-arrays-in-python/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">23</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">23</span>
+      </div>
       <h2 class="card-title">Multi-Dimensional Arrays in Python — Matrices Explained with NumPy</h2>
       <p class="card-excerpt">NumPy matrix operations with practical examples — bridging math concepts and Python implementation.</p>
-      <div class="card-foot"><div class="tags"><span class="t">NumPy</span><span class="t">Python</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">NumPy</span><span class="t">Python</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/slicing-and-indexing-in-python/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">24</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">24</span>
+      </div>
       <h2 class="card-title">Slicing and Indexing in Python — Explained with Examples</h2>
       <p class="card-excerpt">Core Python data access concepts — list filtering, column extraction, and substring operations explained.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Python</span><span class="t">Data</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Python</span><span class="t">Data</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/how-to-use-conditional-statements-if-else-elif-in-python/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">25</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">25</span>
+      </div>
       <h2 class="card-title">How to Use Conditional Statements in Python (if, else, elif)</h2>
       <p class="card-excerpt">Practical guide to if, else, and elif statements in Python with real-world examples.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Python</span><span class="t">Beginners</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Python</span><span class="t">Beginners</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/how-to-use-loops-in-python/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">26</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">26</span>
+      </div>
       <h2 class="card-title">How to Use Loops in Python</h2>
       <p class="card-excerpt">For and while loops explained clearly — essential Python concepts with practical code examples.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Python</span><span class="t">Beginners</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Python</span><span class="t">Beginners</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/how-to-define-and-call-functions-in-python/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">27</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">27</span>
+      </div>
       <h2 class="card-title">How to Define and Call Functions in Python</h2>
       <p class="card-excerpt">Defining and calling functions in Python — improving code readability and reusability explained with examples.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Python</span><span class="t">Beginners</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Python</span><span class="t">Beginners</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/create-and-manipulate-tables-in-a-sql-database-using-python/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">28</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">28</span>
+      </div>
       <h2 class="card-title">How to Create and Manipulate Tables in a SQL Database Using Python</h2>
       <p class="card-excerpt">SQLite and Python for structured data table management — beginner-to-intermediate with clear examples.</p>
-      <div class="card-foot"><div class="tags"><span class="t">SQLite</span><span class="t">Python</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">SQLite</span><span class="t">Python</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="fcc" href="https://www.freecodecamp.org/news/testing-and-debugging-sql-queries-with-python/" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span><span class="card-num">29</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">freeCodeCamp</span>
+        <span class="card-num">29</span>
+      </div>
       <h2 class="card-title">How to Test and Debug SQL Queries with Python</h2>
       <p class="card-excerpt">Techniques for testing and debugging SQL queries programmatically in Python — reliable data pipelines.</p>
-      <div class="card-foot"><div class="tags"><span class="t">SQL</span><span class="t">Testing</span><span class="t">Python</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">SQL</span><span class="t">Testing</span><span class="t">Python</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="med" href="https://medium.com/cometheartbeat/deploying-a-machine-learning-model-as-an-api-d3cbef264ce4" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span><span class="card-num">30</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span>
+        <span class="card-num">30</span>
+      </div>
       <h2 class="card-title">Deploying a Machine Learning Model as an API</h2>
       <p class="card-excerpt">Why it matters to deploy ML models to production, and how an API makes that practical — with step-by-step guidance.</p>
-      <div class="card-foot"><div class="tags"><span class="t">ML</span><span class="t">API</span><span class="t">Deployment</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">ML</span><span class="t">API</span><span class="t">Deployment</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="med" href="https://heartbeat.comet.ml/detecting-credit-card-fraud-with-machine-learning-644db0795edf" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span><span class="card-num">31</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span>
+        <span class="card-num">31</span>
+      </div>
       <h2 class="card-title">Detecting Credit Card Fraud with Machine Learning</h2>
       <p class="card-excerpt">Building a credit card fraud detection model — covering the dataset, feature engineering, and model evaluation.</p>
-      <div class="card-foot"><div class="tags"><span class="t">ML</span><span class="t">Fraud Detection</span><span class="t">Classification</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">ML</span><span class="t">Fraud Detection</span><span class="t">Classification</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="med" href="https://medium.com/cometheartbeat/logging-recommendation-system-visualizations-in-comet-2aeb14669c2e" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span><span class="card-num">32</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span>
+        <span class="card-num">32</span>
+      </div>
       <h2 class="card-title">Logging Recommendation System Visualizations in Comet</h2>
       <p class="card-excerpt">Building a movie recommendation system and logging visualizations in Comet for experiment tracking.</p>
-      <div class="card-foot"><div class="tags"><span class="t">ML</span><span class="t">Comet</span><span class="t">Recommender Systems</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">ML</span><span class="t">Comet</span><span class="t">Recommender Systems</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="med" href="https://medium.com/cometheartbeat/exploring-image-classification-with-kangas-c710c7a5a4d9" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span><span class="card-num">33</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span>
+        <span class="card-num">33</span>
+      </div>
       <h2 class="card-title">Exploring Image Classification with Kangas</h2>
       <p class="card-excerpt">Using Kangas to explore image classification — uploading images, labeling data, and visualising model performance.</p>
-      <div class="card-foot"><div class="tags"><span class="t">ML</span><span class="t">Computer Vision</span><span class="t">Kangas</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">ML</span><span class="t">Computer Vision</span><span class="t">Kangas</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="med" href="https://medium.com/cometheartbeat/tracking-your-sentiment-analysis-with-comet-3f94bd92a84f" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span><span class="card-num">34</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span>
+        <span class="card-num">34</span>
+      </div>
       <h2 class="card-title">Tracking Your Sentiment Analysis with Comet</h2>
       <p class="card-excerpt">Opinion mining with NLP — building and tracking a sentiment analysis model using Comet experiment tracking.</p>
-      <div class="card-foot"><div class="tags"><span class="t">NLP</span><span class="t">Sentiment Analysis</span><span class="t">Comet</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">NLP</span><span class="t">Sentiment Analysis</span><span class="t">Comet</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="med" href="https://medium.com/cometheartbeat/monitoring-a-convolutional-neural-network-cnn-in-comet-702c2d51c839" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span><span class="card-num">35</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span>
+        <span class="card-num">35</span>
+      </div>
       <h2 class="card-title">Monitoring a Convolutional Neural Network (CNN) in Comet</h2>
       <p class="card-excerpt">Training an image classification CNN and monitoring its training metrics and performance using Comet.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Deep Learning</span><span class="t">CNN</span><span class="t">Comet</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Deep Learning</span><span class="t">CNN</span><span class="t">Comet</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="med" href="https://medium.com/cometheartbeat/integrating-time-series-analysis-in-comet-293d1d0e2b22" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span><span class="card-num">36</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span>
+        <span class="card-num">36</span>
+      </div>
       <h2 class="card-title">Integrating Time Series Analysis in Comet</h2>
       <p class="card-excerpt">How to integrate time series forecasting workflows into Comet for experiment tracking and result logging.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Time Series</span><span class="t">ML</span><span class="t">Comet</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Time Series</span><span class="t">ML</span><span class="t">Comet</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="med" href="https://medium.com/@oluseyejeremiah" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span><span class="card-num">37</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span>
+        <span class="card-num">37</span>
+      </div>
       <h2 class="card-title">MalarAI: Mobile Deep Learning for Malaria Detection in Low-Resource Settings</h2>
       <p class="card-excerpt">MSc research write-up on EfficientNet-B0, Grad-CAM, and TensorFlow Lite for offline Android malaria detection.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Deep Learning</span><span class="t">Healthcare</span><span class="t">TFLite</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Deep Learning</span><span class="t">Healthcare</span><span class="t">TFLite</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="med" href="https://medium.com/@oluseyejeremiah/understanding-various-cloud-services-1f113496e9a5" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span><span class="card-num">38</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span>
+        <span class="card-num">38</span>
+      </div>
       <h2 class="card-title">Understanding Various Cloud Services</h2>
       <p class="card-excerpt">How cloud computing works, the various cloud service models, and types of cloud deployment explained clearly.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Cloud</span><span class="t">AWS</span><span class="t">Azure</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Cloud</span><span class="t">AWS</span><span class="t">Azure</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="med" href="https://medium.com/@oluseyejeremiah/understanding-azure-sql-elastic-pools-62f4980e8743" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span><span class="card-num">39</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0faf4;color:#15803d;">Medium</span>
+        <span class="card-num">39</span>
+      </div>
       <h2 class="card-title">Understanding Azure SQL Elastic Pools</h2>
       <p class="card-excerpt">Azure SQL Database and Elastic Pools explained — scalable, secure, cost-effective cloud database management.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Azure</span><span class="t">SQL</span><span class="t">Cloud</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Azure</span><span class="t">SQL</span><span class="t">Cloud</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="twi" href="https://www.twilio.com/en-us/blog/implement-robust-voice-authentication-go" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#fef9e6;color:#92400e;">Twilio</span><span class="card-num">40</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#fef9e6;color:#92400e;">Twilio</span>
+        <span class="card-num">40</span>
+      </div>
       <h2 class="card-title">How to Implement a Robust Voice Authentication System with Go and Twilio</h2>
       <p class="card-excerpt">Building a voice-based OTP system using Twilio Programmable Voice and Go — secure, accessible authentication.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Voice API</span><span class="t">Go</span><span class="t">Auth</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Voice API</span><span class="t">Go</span><span class="t">Auth</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="twi" href="https://www.twilio.com/en-us/blog/developers/community/create-health-chatbot-using-twilio-gemini-step-by-step-guide" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#fef9e6;color:#92400e;">Twilio</span><span class="card-num">41</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#fef9e6;color:#92400e;">Twilio</span>
+        <span class="card-num">41</span>
+      </div>
       <h2 class="card-title">Creating a Health Chatbot Using Twilio and Gemini</h2>
-      <p class="card-excerpt">Building an intelligent healthcare chatbot with Twilio's WhatsApp API and Google Gemini AI responses.</p>
-      <div class="card-foot"><div class="tags"><span class="t">WhatsApp API</span><span class="t">Gemini</span><span class="t">AI Chatbot</span></div><span class="read-btn">Read</span></div>
+      <p class="card-excerpt">Building an intelligent healthcare chatbot with Twilio&#x27;s WhatsApp API and Google Gemini AI responses.</p>
+      <div class="card-foot">
+        <div class="tags"><span class="t">WhatsApp API</span><span class="t">Gemini</span><span class="t">AI Chatbot</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="str" href="https://strapi.io/blog/how-to-build-a-to-do-app-using-next-js-and-strapi" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0fdff;color:#0e7490;">Strapi</span><span class="card-num">42</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0fdff;color:#0e7490;">Strapi</span>
+        <span class="card-num">42</span>
+      </div>
       <h2 class="card-title">How to Build a To-Do App Using Next.js and Strapi</h2>
-      <p class="card-excerpt">Full-stack To-Do app with Strapi's headless CMS and Next.js — covering GraphQL, content types, and CRUD.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Next.js</span><span class="t">Strapi</span><span class="t">GraphQL</span></div><span class="read-btn">Read</span></div>
+      <p class="card-excerpt">Full-stack To-Do app with Strapi&#x27;s headless CMS and Next.js — covering GraphQL, content types, and CRUD.</p>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Next.js</span><span class="t">Strapi</span><span class="t">GraphQL</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="str" href="https://strapi.io/blog/how-to-build-a-hotel-management-app-using-strapi-and-nextjs" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#f0fdff;color:#0e7490;">Strapi</span><span class="card-num">43</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#f0fdff;color:#0e7490;">Strapi</span>
+        <span class="card-num">43</span>
+      </div>
       <h2 class="card-title">How to Build a Hotel Management App Using Strapi and Next.js</h2>
       <p class="card-excerpt">End-to-end hotel booking system with auth, image upload, availability, and room selection using Strapi + Next.js.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Next.js</span><span class="t">Strapi</span><span class="t">Full-stack</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Next.js</span><span class="t">Strapi</span><span class="t">Full-stack</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="hn" href="https://oluseyejeremiah.hashnode.dev/dealing-with-missing-values-in-a-dataset" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#eff6ff;color:#2563eb;">Hashnode</span><span class="card-num">44</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#eff6ff;color:#2563eb;">Hashnode</span>
+        <span class="card-num">44</span>
+      </div>
       <h2 class="card-title">Dealing with Missing Values in a Dataset</h2>
       <p class="card-excerpt">Common causes of missing data and techniques to handle them — imputation, deletion, and best practices.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Python</span><span class="t">Data Cleaning</span><span class="t">ML</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Python</span><span class="t">Data Cleaning</span><span class="t">ML</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
     <a class="card" data-p="hn" href="https://oluseyejeremiah.hashnode.dev/explaining-the-differences-between-saaspaas-and-iaas" target="_blank" rel="noopener">
-      <div class="card-top"><span class="platform" style="background:#eff6ff;color:#2563eb;">Hashnode</span><span class="card-num">45</span></div>
+      <div class="card-top">
+        <span class="platform" style="background:#eff6ff;color:#2563eb;">Hashnode</span>
+        <span class="card-num">45</span>
+      </div>
       <h2 class="card-title">Explaining the Differences Between SaaS, PaaS and IaaS</h2>
       <p class="card-excerpt">Clear breakdown of the three cloud service models — features, advantages, disadvantages, and when to use each.</p>
-      <div class="card-foot"><div class="tags"><span class="t">Cloud</span><span class="t">SaaS</span><span class="t">IaaS</span></div><span class="read-btn">Read</span></div>
+      <div class="card-foot">
+        <div class="tags"><span class="t">Cloud</span><span class="t">SaaS</span><span class="t">IaaS</span></div>
+        <span class="read-btn">Read</span>
+      </div>
     </a>
   </div>
+
   <div class="see-all-row">
     <a class="see-all" href="https://www.freecodecamp.org/news/author/oluseye-jeremiah/" target="_blank" rel="noopener">All freeCodeCamp articles</a>
     <a class="see-all" href="https://www.datacamp.com/blog" target="_blank" rel="noopener">All DataCamp articles</a>
     <a class="see-all" href="https://medium.com/@oluseyejeremiah" target="_blank" rel="noopener">All Medium articles</a>
     <a class="see-all" href="https://www.twilio.com/en-us/blog/authors/author.oluseye-jeremiah" target="_blank" rel="noopener">All Twilio articles</a>
     <a class="see-all" href="https://dev.to/actiandev" target="_blank" rel="noopener">All Hackmamba articles</a>
+    
   </div>
+
   <div class="about">
     <div>
       <p class="al">About</p>
@@ -444,22 +746,65 @@ footer{border-top:1px solid var(--border);max-width:1060px;margin:0 auto;padding
     <div>
       <p class="al">Published on</p>
       <div class="plist">
-        <a class="plat-row" href="https://www.datacamp.com/blog" target="_blank" rel="noopener"><div class="plat-dot" style="background:#0f5bb5;"></div><span class="plat-name">DataCamp</span><span class="plat-desc">AI, ML, SQL, Git</span><span class="plat-arr">↗</span></a>
-        <a class="plat-row" href="https://www.freecodecamp.org/news/author/oluseye-jeremiah/" target="_blank" rel="noopener"><div class="plat-dot" style="background:#15803d;"></div><span class="plat-name">freeCodeCamp</span><span class="plat-desc">Python, SQL, Data · 14+ articles</span><span class="plat-arr">↗</span></a>
-        <a class="plat-row" href="https://dev.to/actiandev" target="_blank" rel="noopener"><div class="plat-dot" style="background:#c2410c;"></div><span class="plat-name">Hackmamba</span><span class="plat-desc">AI, Developer tools · 50+ articles</span><span class="plat-arr">↗</span></a>
-        <a class="plat-row" href="https://medium.com/@oluseyejeremiah" target="_blank" rel="noopener"><div class="plat-dot" style="background:#15803d;"></div><span class="plat-name">Medium</span><span class="plat-desc">ML, AI, Cloud</span><span class="plat-arr">↗</span></a>
-        <a class="plat-row" href="https://www.twilio.com/en-us/blog/authors/author.oluseye-jeremiah" target="_blank" rel="noopener"><div class="plat-dot" style="background:#92400e;"></div><span class="plat-name">Twilio</span><span class="plat-desc">API, Voice, AI</span><span class="plat-arr">↗</span></a>
-        <a class="plat-row" href="https://strapi.io/user/oluseye-jeremiah" target="_blank" rel="noopener"><div class="plat-dot" style="background:#0e7490;"></div><span class="plat-name">Strapi</span><span class="plat-desc">Next.js, Headless CMS</span><span class="plat-arr">↗</span></a>
-        <a class="plat-row" href="https://oluseyejeremiah.hashnode.dev" target="_blank" rel="noopener"><div class="plat-dot" style="background:#2563eb;"></div><span class="plat-name">Hashnode</span><span class="plat-desc">Data Science, Cloud</span><span class="plat-arr">↗</span></a>
-        <a class="plat-row" href="https://dev.to/oluseyej" target="_blank" rel="noopener"><div class="plat-dot" style="background:#6d28d9;"></div><span class="plat-name">Dev.to</span><span class="plat-desc">AI Agents, Dev Tools</span><span class="plat-arr">↗</span></a>
+        
+      <a class="plat-row" href="https://www.datacamp.com/blog" target="_blank" rel="noopener">
+        <div class="plat-dot" style="background:#0f5bb5;"></div>
+        <span class="plat-name">DataCamp</span>
+        <span class="plat-desc">AI, ML, SQL, Git</span>
+        <span class="plat-arr">↗</span>
+      </a>
+      <a class="plat-row" href="https://www.freecodecamp.org/news/author/oluseye-jeremiah/" target="_blank" rel="noopener">
+        <div class="plat-dot" style="background:#15803d;"></div>
+        <span class="plat-name">freeCodeCamp</span>
+        <span class="plat-desc">Python, SQL, Data · 14+ articles</span>
+        <span class="plat-arr">↗</span>
+      </a>
+      <a class="plat-row" href="https://dev.to/actiandev" target="_blank" rel="noopener">
+        <div class="plat-dot" style="background:#c2410c;"></div>
+        <span class="plat-name">Hackmamba</span>
+        <span class="plat-desc">AI, Developer tools · 50+ articles</span>
+        <span class="plat-arr">↗</span>
+      </a>
+      <a class="plat-row" href="https://medium.com/@oluseyejeremiah" target="_blank" rel="noopener">
+        <div class="plat-dot" style="background:#15803d;"></div>
+        <span class="plat-name">Medium</span>
+        <span class="plat-desc">ML, AI, Cloud</span>
+        <span class="plat-arr">↗</span>
+      </a>
+      <a class="plat-row" href="https://www.twilio.com/en-us/blog/authors/author.oluseye-jeremiah" target="_blank" rel="noopener">
+        <div class="plat-dot" style="background:#92400e;"></div>
+        <span class="plat-name">Twilio</span>
+        <span class="plat-desc">API, Voice, AI</span>
+        <span class="plat-arr">↗</span>
+      </a>
+      <a class="plat-row" href="https://strapi.io/user/oluseye-jeremiah" target="_blank" rel="noopener">
+        <div class="plat-dot" style="background:#0e7490;"></div>
+        <span class="plat-name">Strapi</span>
+        <span class="plat-desc">Next.js, Headless CMS</span>
+        <span class="plat-arr">↗</span>
+      </a>
+      <a class="plat-row" href="https://oluseyejeremiah.hashnode.dev" target="_blank" rel="noopener">
+        <div class="plat-dot" style="background:#2563eb;"></div>
+        <span class="plat-name">Hashnode</span>
+        <span class="plat-desc">Data Science, Cloud</span>
+        <span class="plat-arr">↗</span>
+      </a>
+      <a class="plat-row" href="https://dev.to/oluseyej" target="_blank" rel="noopener">
+        <div class="plat-dot" style="background:#6d28d9;"></div>
+        <span class="plat-name">Dev.to</span>
+        <span class="plat-desc">AI Agents, Dev Tools</span>
+        <span class="plat-arr">↗</span>
+      </a>
       </div>
     </div>
   </div>
 </div>
+
 <footer>
   <span>© 2025 Oluseye Jeremiah Oluwapelumi</span>
   <div class="fd"><div class="fdot"></div><span>Open to technical writing opportunities</span></div>
 </footer>
+
 <script>
 function filter(p, btn) {
   document.querySelectorAll('.fb').forEach(b => b.classList.remove('on'));
